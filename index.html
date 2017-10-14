@@ -396,61 +396,23 @@
       
         
           
-            <h4 id="安装环境Node-Git"><a href="#安装环境Node-Git" class="headerlink" title="安装环境Node+Git"></a>安装环境Node+Git</h4><h4 id="安装hexo脚手架hexo-cli"><a href="#安装hexo脚手架hexo-cli" class="headerlink" title="安装hexo脚手架hexo-cli"></a>安装hexo脚手架hexo-cli</h4><p>通过npm安装，如果不行可以使用cnpm，前提要先设置淘宝镜像</p>
-<blockquote>
-<p>npm install -g hexo-cli</p>
-</blockquote>
-<h4 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h4><p>第一步：hexo-cli安装完成后，新建一个空文件夹，然后cd到该文件夹，执行命令</p>
-<blockquote>
-<p>hexo init</p>
-</blockquote>
-<p>该命令会从github上下载hexo的初始项目文件</p>
-<p>第二步：首先通过cd进入项目根目录，也就是刚才新建的空文件夹，然后通过npm或cnpm安装package.json中的依赖文件</p>
-<blockquote>
-<p>npm install</p>
-</blockquote>
-<p>第三步：安装完成后在找到themes文件夹，这里面是存放主题的地方，里面会有一个默认的主题，打开该主题文件夹，找到_config.yml,这个文件是配置主题用的</p>
-<p>_config.yml一般都会有menu配置，这个配置的是导航栏,冒号后面是路径，这里注意不管是主题的配置，还是根目录的配置，冒号后面都要跟空格。其他配置每个主题可能不一样，这个主题作者一般都会有说明的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">    首页: /</div><div class="line">    归档: /archives/</div><div class="line">    简历: /resume/</div><div class="line">    GitHub: https://github.com/Zzhiren</div><div class="line">    Stackoverflow:</div><div class="line">    Rss: /atom.xml</div></pre></td></tr></table></figure></p>
-<h4 id="hexo的一些一本命令"><a href="#hexo的一些一本命令" class="headerlink" title="hexo的一些一本命令"></a>hexo的一些一本命令</h4><blockquote>
-<p>hexo generate</p>
-</blockquote>
-<p>简写</p>
-<blockquote>
-<p>hexo g</p>
-</blockquote>
-<p>生成博客静态资源</p>
-<blockquote>
-<p>hexo clean</p>
-</blockquote>
-<p>清空生成的静态资源</p>
-<blockquote>
-<p>hexo deploy</p>
-</blockquote>
-<p>简写</p>
-<blockquote>
-<p>hexo d</p>
-</blockquote>
-<p>将生成的静态资源上传到github上</p>
-<h4 id="将博客代码部署到GitHub"><a href="#将博客代码部署到GitHub" class="headerlink" title="将博客代码部署到GitHub"></a>将博客代码部署到GitHub</h4><p>首先要在github上创建一个空仓库，仓库名有默认格式</p>
-<blockquote>
-<p>xxxx.github.io</p>
-</blockquote>
-<p>xxxx为你github的用户名</p>
-<p>然后在你的博客项目的_config.yml配置中（注意：不是主题的_config.yml）找到如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/xxxx/xxxx.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>这个repository就填写你仓库的路径，然后保存，最后就可以通过命令部署了</p>
-<blockquote>
-<p>hexo clean</p>
-<p>hexo g</p>
-<p>hexo d</p>
-</blockquote>
-<p>然后访问xxxx.github.io，既可以访问你个博客了</p>
-<p>还可以开启一个本地服务进行预先预览</p>
-<blockquote>
-<p>hexo s</p>
-</blockquote>
-<p>然后访问 localhost:4000 ，就可以本地预览调试。</p>
+          安装环境Node+Git安装hexo脚手架hexo-cli通过npm安装，如果不行可以使用cnpm，前提要先设置淘宝镜像
 
-          
+npm install -g hexo-cli
+
+初始化项目第一步：hexo-cli安装完成后，新建一个空文件夹，然后cd到该文件夹，执行命令
+
+hexo init
+
+该命令会
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/13/build-hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
